@@ -11,11 +11,6 @@
 <script setup>
 import { onMounted } from 'vue'
 import FloatingBar from './components/FLoatingBar.vue'
-import Hero from './components/Hero.vue'
-import About from './components/About.vue'
-import Skills from './components/Skills.vue'
-import Journey from './components/Journey.vue'
-import Footer from './components/Footer.vue'
 
 onMounted(() => {
   // Initialize Rellax for parallax effects

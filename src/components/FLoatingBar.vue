@@ -1,5 +1,6 @@
 <template>
-    <div v-if="!isProjectsPage" class="fixed left-6 top-1 -translate-y-1/2 z-50" data-aos="fade-right" data-aos-duration="1000">
+    <div v-if="!isProjectsPage" class="fixed left-6 top-1 -translate-y-1/2 z-50" data-aos="fade-right"
+        data-aos-duration="1000">
         <div class="flex flex-col items-center">
             <!-- Navigation Links -->
             <div class="flex flex-col space-y-6">
@@ -7,10 +8,10 @@
                 <div class="w-[1px] h-24 bg-gray-300 mx-auto"></div>
 
                 <!-- Nav Links -->
-                <router-link to="/"
+                <a href="#home"
                     class="text-gray-600 hover:text-primary transform hover:-translate-x-1 transition-all duration-300 writing-mode-vertical">
                     Home
-                </router-link>
+                </a>
 
                 <a href="#about"
                     class="text-gray-600 hover:text-primary transform hover:-translate-x-1 transition-all duration-300 writing-mode-vertical">
@@ -22,11 +23,10 @@
                     Skills
                 </a>
 
-                <router-link 
-                    to="/projects"
+                <a href="#projects"
                     class="text-gray-600 hover:text-primary transform hover:-translate-x-1 transition-all duration-300 writing-mode-vertical">
                     Projects
-                </router-link>
+                </a>
 
                 <a href="#journey"
                     class="text-gray-600 hover:text-primary transform hover:-translate-x-1 transition-all duration-300 writing-mode-vertical">
@@ -45,13 +45,7 @@
     </div>
 </template>
 
-<script setup>
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
-const isProjectsPage = computed(() => route.path === '/projects')
-</script>
+<script setup></script>
 
 <style scoped>
 .writing-mode-vertical {
